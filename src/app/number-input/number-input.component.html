@@ -1,0 +1,13 @@
+<div class="input-group mb-3">
+  <div class="col-md-5">
+    <input type="image" src="../../assets/images/help.gif">
+    <label for="" class="control-label">{{obj.labelTxt}}</label>
+</div>
+<div class="col-md-7 row">
+  
+      <span class="input-group-text" *ngIf="obj.format=='currency'">$</span>    
+     <input type="text" [(ngModel)]="obj.value" class="form-control col-md-10" > 
+      <span class="input-group-text" *ngIf="obj.format=='percentage'">%</span>
+   
+  </div>
+</div>

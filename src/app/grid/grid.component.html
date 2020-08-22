@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+          <th *ngFor="let head of columns" >
+            {{head}}
+          </th>
+        </tr>
+        </thead>
+        <tbody *ngIf="data">
+            <tr *ngFor="let lines of data">
+                <td *ngFor="let cell of lines">{{cell}}</td>
+            </tr>
+        </tbody>
+        </table>

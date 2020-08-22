@@ -1,0 +1,16 @@
+
+
+  <div class="input-group mb-3">
+    <div class="col-md-5">
+      <input type="image" src="../../assets/images/help.gif">
+      <label for="" class="control-label">{{obj.labelTxt}}</label>
+  </div>
+  <div class="col-md-7 row" >
+    <select class="custom-select" (change)="onChange($event)">
+      <ng-container *ngFor="let opt of obj.options" >
+      <option [value]="opt.value">{{opt.key}}</option>
+    </ng-container>
+    </select>
+     
+    </div>
+  </div>

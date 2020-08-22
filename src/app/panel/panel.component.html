@@ -1,0 +1,11 @@
+<div class="card bg-primary mb-3 " >
+    <div class="card-header">{{renderObj.headerTxt}}</div>
+    <div class="card-body">
+      <ng-container *ngFor="let item of renderObj.components">
+      <ng-container [ngSwitch]="item.type">
+      <app-number-input *ngSwitchCase="'number'" [obj]="item"></app-number-input>
+      <app-select *ngSwitchCase="'select'" [obj]="item"></app-select>
+      </ng-container>
+    </ng-container>
+    </div>
+  </div>

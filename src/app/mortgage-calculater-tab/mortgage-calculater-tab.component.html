@@ -1,0 +1,18 @@
+<h1>
+    <img src="assets/images/MC-CH.svg" height="53" width="53" alt="Image of a pink square with a house and a calculator">
+    <span>Mortgage Calculator</span>
+</h1>
+<div class="row">
+<div class="toolbar col" role="banner" *ngFor="let item of panelList" >
+ <app-panel [renderObj]="item"></app-panel>
+</div>
+
+</div>
+<div>
+    <button type="button " class="btn btn-primary" (click)="calculate()">Calculate..</button>
+    </div>
+    <div style="margin-top:40px" *ngIf="result">
+        <h3> Calculation Summary</h3>
+    <app-grid [columns]="columns" [data]="result"></app-grid>
+</div>
+

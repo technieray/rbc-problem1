@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GeneraicComponents} from './model/components'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rbc-problem1';
+  constructor(){}
+
+  
 }

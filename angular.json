@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rbc-problem1"
+    }
+  },
+  "defaultProject": "rbc-problem1",
+  "cli": {
+    "analytics": false
+  }
 }
